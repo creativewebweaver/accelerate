@@ -39,17 +39,3 @@ function create_custom_post_types() {
     );
 }
 add_action( 'init', 'create_custom_post_types' );
-
-// Register widget area 
-function accelerate_widgets_init() {
-	register_sidebar( array(
-		'name'          => __( 'Sidebar 1', 'accelerate' ),
-		'id'            => 'sidebar-1',
-		'description'   => __( 'Add widgets here to appear in your sidebar.', 'accelerate' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-}
-add_action( 'widgets_init', 'accelerate_widgets_init' );
