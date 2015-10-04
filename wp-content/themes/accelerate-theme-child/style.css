@@ -14,10 +14,49 @@
 
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+	margin-bottom: 0px;
 }
 
 #masthead {
     background: none repeat scroll 0 0 #45ac9d;
+}
+
+#masthead nav ul li {
+	float: left;
+	margin: 0 0 0 40px;
+}
+
+#masthead nav ul {
+	float: left;
+	margin-top: 0px;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* nav link */
+.nav-menu a {
+	text-transform: uppercase;
+}
+
+/* selected nav link */
+.nav-menu a:hover, .nav-menu a:active {
+	font-weight: bold;
+}
+
+.nav-menu .current-menu-item > a,
+.nav-menu .current-menu-ancestor > a,
+.nav-menu .current_page_item > a,
+.nav-menu .current_page_ancestor > a {
+	font-weight: bold;
+}
+
+#content h1 {
+	font-size: 36px;
+	font-family: 'Montserrat';
+	color: #45ac9d;
+	text-transform: uppercase;
 }
 
 .button {
@@ -35,7 +74,7 @@
 	text-transform: uppercase;
 }
 
-.blop-post h2 {
+.blog-post h2 {
 	font-size: 24px;
 	font-family: 'Montserrat';
 	font-weight: bold;
@@ -47,4 +86,173 @@
 	font-weight: bold;
 	color: #45ac9d;
 	text-transform: uppercase;
+}
+
+/* Blog Pages Sidebar */
+
+/* sidebar */
+#sidebar {
+	padding-top: 0px;
+}
+#sidebar li {
+	list-style-type: none;
+}
+#sidebar p {
+	font: 14px/28px 'Open Sans';
+	margin-bottom: 20px;
+}
+#sidebar .widget {
+	padding: 28px 31px;
+}
+#sidebar .widget_text {
+	border-bottom: 1px solid #BFBFBF;
+}
+#sidebar .widget_text img {
+	max-width: 175px;
+	margin: auto;
+	display: block;
+	
+}
+#sidebar .widget_text a {
+	color: #3b3b3b;
+	font-weight: 700;
+	text-decoration: underline;
+}
+#sidebar .widget_search {
+	border-bottom: 1px solid #BFBFBF;
+}
+#sidebar .widget_search input[type="text"] {
+	border-top: 1px solid #a6a6a6;
+	border-bottom: 1px solid #a6a6a6;
+	border-left: 1px solid #a6a6a6;
+	border-right: none;
+	width: 200px;
+	height: 36px;
+	padding: 8px;
+	vertical-align: middle;
+}
+#sidebar .widget_search input[type="submit"] {
+	border-top: 1px solid #a6a6a6;
+	border-bottom: 1px solid #a6a6a6;
+	border-right: 1px solid #a6a6a6;
+	border-left: none;
+	width: 35px;
+	height: 36px;
+	background: url('img/search-arrow.png') no-repeat 13px 10px #45ac9d;
+	color: #ffffff;
+	margin-left: -5px;
+	vertical-align: middle;
+}
+#sidebar .widget_categories {
+	padding: 28px 31px 0 31px;
+}
+#sidebar .widget_categories h2,
+#sidebar .widget_archive h2 {
+	font: 600 14px 'Open Sans';
+	color: #45ac9d;
+	margin-bottom: 20px;
+}
+#sidebar .widget_categories ul li,
+#sidebar .widget_archive ul li {
+	font: 600 14px 'Open Sans';
+	color: #3b3b3b;
+	margin-bottom: 15px;
+}
+#sidebar .widget_categories ul li a,
+#sidebar .widget_archive ul li a {
+	color: #3b3b3b;
+}
+
+
+/* Case Studies */
+
+article.case-study {
+	margin: 40px 0 0;
+}
+
+aside.case-study-sidebar {
+	float: left;
+	width: 314px;
+	margin: 0 40px 0 0;
+}
+
+.case-study-sidebar h5 {
+	font-size: 14px;
+	font-family: 'Montserrat';
+	font-weight: normal;
+	margin-top: 0px;
+	color: #a6a6a6;
+}
+
+.case-study-sidebar h2 {
+	font-size: 24px;
+	font-family: 'Montserrat';
+	font-weight: normal;
+}
+
+.case-study-sidebar h6 {
+	font-size: 16px;
+	font-family: 'Montserrat';
+	font-weight: normal;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+div.case-study-images {
+	float: left;
+	width: 606px;
+}
+
+div.case-study-images img {
+	margin-bottom: 50px;
+	border: 1px solid #dddddd;
+}
+
+/* Home Page */
+
+.featured-work {
+	margin: 0;
+	padding: 0;
+}
+
+ul.homepage-featured-work {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+	float: left;
+}
+
+li.individual-featured-work {
+	display: inline-block;
+	float: left;
+	margin-right: 15px;
+	text-align: center;
+}
+
+.featured-work h2 {
+	font-size: 16px;
+	font-family: 'Montserrat';
+	color: #000;
+	text-transform: uppercase;
+	margin-top: 50px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.featured-work h3 {
+	font-weight: bold;
+	font-size: 16px;
+	margin-top: 25px;
+}
+
+.featured-work img {
+	border: 1px solid #dddddd;
+}
+
+.site-content {
+	margin-top: 80px;
+}
+
+.clearfix {
+  clear: both; 
 }

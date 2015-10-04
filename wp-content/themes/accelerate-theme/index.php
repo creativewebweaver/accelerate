@@ -19,7 +19,6 @@ get_header(); ?>
 	<section class="blog-page">
 		<div class="site-content">
 			<div class="main-content">
-				
 				<?php
 			if ( have_posts() ) :
 				// Start the Loop.
